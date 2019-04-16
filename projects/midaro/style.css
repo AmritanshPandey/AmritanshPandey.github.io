@@ -1,0 +1,197 @@
+body {
+    margin: 0%;
+}
+
+.top-space {
+    padding-top: 5rem;
+}
+
+.navbar {
+    height: 3.5rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar a {
+    padding: 10px 10px;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 100%;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.bg-blue {
+    background-color: rgb(231, 231, 231)
+}
+
+.img-fluid {
+    max-width: 35%;
+    height: auto;
+    padding: 2rem;
+}
+
+.img-fluids {
+    max-width: 80%;
+    height: auto;
+    padding: 2rem;
+}
+
+.heading {
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.body-text {
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.body-texts {
+    font-size: 1rem;
+    padding: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.spacing {
+    padding-top: 35%;
+}
+
+.four-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.four-grid-item {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.button {
+    background-color: rgb(0, 0, 0); 
+    color: white; 
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+  }
+
+  .button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .center{
+      text-align: center;
+      padding-bottom:  3rem;
+  }
+
+  .space{
+      padding-top: 1rem;
+  }
+/* Mobile Responsive CSS */
+
+@media (max-width: 991px) {
+    .item1 {
+        grid-area: header;
+    }
+    .item2 {
+        grid-area: menu;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-areas: 'header' 'menu';
+    }
+    .top-space {
+        padding-top: 3rem;
+    }
+    .spacing {
+        padding-top: 0%;
+        padding-bottom: 2rem;
+    }
+    .img-fluid {
+        max-width: 50%;
+        height: auto;
+        padding: 2rem;
+    }
+    .img-fluids {
+        max-width: 100%;
+        height: auto;
+        padding: 0rem;
+    }
+    .four-grid {
+        display: grid;
+        grid-template-areas: 'i1' 'i2' 'i3' 'i4';
+        text-align: center;
+    }
+    .items1 {
+        grid-area: i1;
+    }
+    .items2 {
+        grid-area: i2;
+    }
+    .items3 {
+        grid-area: i3;
+    }
+    .items4 {
+        grid-area: i4;
+    }
+
+    .four-grid-item {
+    padding: 0%;
+    }
+
+    .website{
+        padding: 2rem;
+    }
+
+    .button-space{
+        padding-top: 1rem;
+    }
+}
+
+
+
+
