@@ -3,12 +3,12 @@ body {
 }
 
 .top-space {
-    padding-top: 3rem;
+    padding-top: 5rem;
 }
 
 .navbar {
     height: 3.5rem;
-    background-color: #08bcd7;
+    background-color: rgb(0, 0, 0);
     color: white;
     width: 100%;
     text-align: center;
@@ -36,27 +36,25 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 2rem;
+    grid-template-columns: auto auto
 }
 
 .grid-item {
     text-align: center;
-    padding: 1rem;
 }
 
 .bg-blue {
-    background-color: #1c2135
+    background-color: rgb(231, 231, 231)
 }
 
 .img-fluid {
-    max-width: 30%;
+    max-width: 50%;
     height: auto;
     padding: 2rem;
 }
 
 .img-fluids {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
     padding: 2rem;
 }
@@ -67,14 +65,11 @@ body {
     font-weight: 200;
     text-transform: uppercase;
     text-align: center;
-    color: white
 }
 
 .body-text {
     font-size: 1rem;
     padding: 1rem;
-    color: white;
-    text-align: left !important;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -83,22 +78,33 @@ body {
     padding: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
-    color: white;
 }
 
 .bg-white {
-    background-color: #016c7e;
+    background-color: rgb(196, 196, 196);
 }
 
 .spacing {
-    padding-top: 40%;
+    padding-top: 35%;
+}
+
+.four-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.four-grid-item {
+    padding: 20px;
+    text-align: center;
 }
 
 
-
-
 .button {
-    background-color: #08bcd7; 
+    background-color: rgb(0, 0, 0); 
     color: white; 
     padding: 16px 32px;
     text-align: center;
@@ -121,20 +127,10 @@ body {
       text-align: center;
       padding-bottom:  3rem;
   }
-  .four-grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
 
-.four-grid-item {
-    padding: 20px;
-    text-align: center;
-}
-
+  .space{
+      padding-top: 1rem;
+  }
 /* Mobile Responsive CSS */
 
 @media (max-width: 991px) {
@@ -149,20 +145,22 @@ body {
         grid-template-areas: 'header' 'menu';
     }
     .top-space {
-        padding-top: 0;
+        padding-top: 3rem;
     }
     .spacing {
         padding-top: 0%;
-       
+        padding-bottom: 2rem;
     }
     .img-fluid {
-        max-width: 70%;
+        max-width: 50%;
         height: auto;
-        padding-top: 2rem;
-        padding-bottom: 0;
-
+        padding: 2rem;
     }
-  
+    .img-fluids {
+        max-width: 100%;
+        height: auto;
+        padding: 0rem;
+    }
     .four-grid {
         display: grid;
         grid-template-areas: 'i1' 'i2' 'i3' 'i4';
@@ -184,6 +182,16 @@ body {
     .four-grid-item {
     padding: 0%;
     }
-  
+
+    .website{
+        padding: 2rem;
+    }
+
+    .button-space{
+        padding-top: 1rem;
+    }
 }
+
+
+
 

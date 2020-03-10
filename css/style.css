@@ -4129,3 +4129,7 @@ h6 {
   transition-duration: 0.8s;
   cursor: pointer;
 }
+
+.welcome_text p {
+  max-width: 100%;
+}
